@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 class="sticky">
+        The Sticky Navbar
+    </h1>
+    <button class="add" id="add"> + Create note</button>
+
+
+    <span style="position: absolute;right: 20px;">
+        <div><input type="radio" id="check_all" name="filter"> Show All</div>
+        <div><input type="radio" id="check_starred" name="filter"> Show Starred</div>
+    </span>
+
+    <section id="notes" class="d-flex justify-content-around flex-wrap mt-5" draggable="true">
+
+    </section>
+    
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.2.2/marked.min.js"></script>   
+
+    <script src="script.js"></script>
+</body>
+</html>
